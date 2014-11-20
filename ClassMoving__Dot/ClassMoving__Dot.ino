@@ -40,8 +40,8 @@
 #include <MeggyJrSimple.h>    // Required code, line 1 of 2.
 
 //Global Variables go here
-int xcoord = 0;
-int ycoord = 6;
+int xcoord = 3;
+int ycoord = 4;
 
 void setup()                    // run once, when the sketch starts
 {
@@ -80,7 +80,6 @@ void loop()                     // run over and over again
     else
       ycoord =7;
 }
- walls();
  
  DrawPx(xcoord,ycoord,Red); //Draws Dot 
  DisplaySlate();
@@ -88,46 +87,5 @@ void loop()                     // run over and over again
  ClearSlate();
  
 }
-
-void walls()
-{
-  DrawPx(1,1,5);
-  DrawPx(1,2,5);
-  DrawPx(1,3,5);
-  DrawPx(1,7,5);
-  DrawPx(2,7,5);
-  DrawPx(3,7,5);
-  DrawPx(4,7,5);
-  DrawPx(3,3,5);
-  DrawPx(4,3,5);
-  DrawPx(7,6,5);
-  DrawPx(6,5,5);
-  DrawPx(4,6,5);
-  DrawPx(0,1,5);
-  DrawPx(0,1,5);
-  DrawPx(7,1,5);
-  DrawPx(5,0,5);
-  DrawPx(5,1,5);
-  DrawPx(4,4,5);
-  DrawPx(0,5,5);
-  DrawPx(2,5,5);
-  DrawPx(2,2,5);
-  DrawPx(5,4,5);
-  DrawPx(6,6,5);
-  DrawPx(5,7,Yellow);
-  DrawPx(3,2,5);
-  DrawPx(5,6,5);
-  DrawPx(6,2,5);
-  DrawPx(6,3,5);
-  DrawPx(7,4,5);
-  DrawPx(6,1,5);
-  DrawPx(2,1,5);
-  DrawPx(3,0,5);
-  DrawPx(0,7,5);
- 
-
-  DisplaySlate();  
-}
-
 
 
